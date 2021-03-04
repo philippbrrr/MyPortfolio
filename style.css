@@ -336,8 +336,9 @@ body main #slide-wrapper .three #karte-wrapper .karte .bild-container {
 body main #slide-wrapper .three #karte-wrapper .karte .bild-container .karte-img-top {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
   overflow: hidden;
+  margin-top: 5vh;
 }
 body main #slide-wrapper .four {
   background-color: #cecece;

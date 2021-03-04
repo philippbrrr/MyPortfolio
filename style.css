@@ -1,0 +1,587 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body p {
+  margin: 0;
+}
+body .h1, body h1 {
+  font-size: 0;
+  margin: 0;
+  margin-bottom: 3vh;
+}
+body #popup {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  z-index: 500;
+  color: black;
+  background-color: white;
+}
+body #popup button {
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 2vh 2vw;
+  font-size: 2.5vh;
+}
+body #popup button:hover {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+body #popup h1 {
+  font-size: 4vh;
+  margin: 5vh 10vw;
+}
+body header {
+  display: none;
+}
+body header .intro-nav-wrapper {
+  max-height: 100vh;
+  width: 30vw;
+  background-color: #f3f0f0;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+}
+body header .intro-nav-wrapper .nav-bar {
+  height: 40vh;
+  width: 100%;
+  background-color: #e7e5e5;
+}
+body header .intro-nav-wrapper .nav-bar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+}
+body header .intro-nav-wrapper .nav-bar ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: black;
+  box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.115);
+}
+body header .intro-nav-wrapper .nav-bar ul li p {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 3.5vh;
+}
+body header .intro-nav-wrapper .nav-bar ul li:hover {
+  overflow: hidden;
+  background-color: #121212;
+  color: white;
+}
+body header .intro-nav-wrapper .links {
+  height: 20vh;
+  background-color: #d1d1d1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+body header .intro-nav-wrapper .links ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body header .intro-nav-wrapper .links ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+body header .intro-nav-wrapper .links ul li a img {
+  width: 2.5vh;
+}
+body header .intro-nav-wrapper .links ul li:hover {
+  background: #d1d1d1;
+}
+body header .intro-nav-wrapper #intro {
+  height: 40vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+body header .intro-nav-wrapper #intro p {
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: "Lobster", cursive;
+  position: relative;
+  line-height: 4.5vh;
+  margin: 0 2vw;
+}
+body header .intro-nav-wrapper #intro p span {
+  font-size: 5vh;
+}
+body header .intro-nav-wrapper #intro p span span {
+  text-decoration: underline;
+}
+body main {
+  display: none;
+}
+body main #slide-wrapper {
+  width: 310vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+body main #slide-wrapper .slide1 {
+  position: relative;
+  min-width: 70vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+body main #slide-wrapper .slide1 .about-title {
+  text-decoration: underline;
+  max-height: 100%;
+}
+body main #slide-wrapper .one {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-width: 100vw;
+}
+body main #slide-wrapper .one #placeholder {
+  max-height: 100vh;
+  width: 30vw;
+  min-width: 30vw;
+}
+body main #slide-wrapper .one #wrapper-img {
+  height: 100vh;
+  width: 70vw;
+  min-width: 70vw;
+  background: url(./images/entrepreneur.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(19, 19, 19, 0.333);
+  background-blend-mode: soft-light;
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+body main #slide-wrapper .one #wrapper-img h1 {
+  color: rgba(255, 255, 255, 0.728);
+  margin-right: 3vw;
+  font-family: "Bebas Neue";
+  font-size: 4vw;
+  text-decoration: underline;
+}
+body main #slide-wrapper .one #wrapper-img h1 span {
+  margin-left: 6vw;
+  padding-top: 0;
+  line-height: 1vh;
+}
+body main #slide-wrapper .two #about-text {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  column-gap: 3vh;
+  background-color: rgba(22, 22, 22, 0.401);
+}
+body main #slide-wrapper .two #about-text #personal, body main #slide-wrapper .two #about-text #education, body main #slide-wrapper .two #about-text #work {
+  width: 100%;
+  min-height:33vh;
+  height: 33vh; /*vorher % */
+  overflow-y: scroll;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  padding: 3.5vh 1.9vw;
+  font-family: "Raleway", sans-serif;
+  color: #f3f3f3;
+  background-blend-mode: soft-light;
+  background-size: cover;
+}
+body main #slide-wrapper .two #about-text #personal ul, body main #slide-wrapper .two #about-text #education ul, body main #slide-wrapper .two #about-text #work ul {
+  list-style: none;
+}
+body main #slide-wrapper .two #about-text #personal {
+  background-image: url(./images/personal.jpeg);
+  background-color: rgba(20, 11, 11, 0.857);
+  /*background-position-y: -10vh;*/
+}
+body main #slide-wrapper .two #about-text #education {
+  background-image: url(./images/education.jpeg);
+  background-color: rgba(16, 15, 27, 0.809);
+}
+body main #slide-wrapper .two #about-text #work {
+  background-image: url(./images/work.jpeg);
+  background-color: rgba(19, 14, 0, 0.816);
+  /*background-position-y: -20vh;*/
+  background-repeat: no-repeat;
+}
+body main #slide-wrapper .two #about-text h2 {
+  margin: 1vw;
+  font-weight: bold;
+  font-size: 4vh;
+}
+body main #slide-wrapper .two #about-text p {
+  max-height: 100%;
+  font-size: 2.25vh;
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
+}
+body main #slide-wrapper .two #about-text p span {
+  font-weight: 500;
+}
+body main #slide-wrapper .three .carousel-control-prev {
+  top: 75vh;
+  left: 0;
+}
+body main #slide-wrapper .three .carousel-control-next {
+  top: 75vh;
+  left: 60vw;
+}
+body main #slide-wrapper .three .carousel-control-next,
+body main #slide-wrapper .three .carousel-control-prev,
+body main #slide-wrapper .three .carousel-indicators li {
+  filter: invert(60%);
+  z-index: 0;
+}
+body main #slide-wrapper .three #karte-wrapper {
+  max-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: grey;
+}
+body main #slide-wrapper .three #karte-wrapper .carousel-item {
+  height: 100%;
+}
+body main #slide-wrapper .three #karte-wrapper .carousel-indicators {
+  bottom: 3vh;
+  z-index: 1;
+}
+body main #slide-wrapper .three #karte-wrapper .carousel-inner {
+  align-self: center;
+}
+body main #slide-wrapper .three #karte-wrapper a > span {
+  height: 5vh;
+  width: 5vw;
+}
+body main #slide-wrapper .three #karte-wrapper .karte {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfdf;
+  overflow: hidden;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .karte-body {
+  max-height: 45vh;
+  height: 40vh;
+  width: 100%;
+  min-height: 30vh;
+  background-color: #dfdfdf;
+  padding: 5vh 5vw;
+  font-family: "Raleway", sans-serif;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .karte-body h5 {
+  font-size: 3.5vh;
+  margin: 3vh;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .karte-body p {
+  font-size: 2vh;
+  margin: 4vh 3vh;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .karte-body a {
+  margin-left: 3vh;
+  font-size: 2vh;
+  padding: 1vh;
+  border-radius: 8px;
+  background-color: #201f1f;
+  color: white;
+  text-decoration: none;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .bild-container {
+  width: 100%;
+  height: 45vh;
+  max-height: 60vh;
+  background-color: #dfdfdf;
+}
+body main #slide-wrapper .three #karte-wrapper .karte .bild-container .karte-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+body main #slide-wrapper .four {
+  background-color: #cecece;
+  max-width: 70vw;
+  height: 100vh;
+}
+body main #slide-wrapper .four #contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 100%;
+  height: 100%;
+}
+body main #slide-wrapper .four #contact-wrapper .top {
+  color: white;
+  height: 99.5%;
+  width: 99.75%;
+  background-color: rgba(0, 0, 0, 0.374);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  text-align: center;
+}
+body main #slide-wrapper .four #contact-wrapper .top h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5vh;
+  font-weight: 700;
+}
+body main #slide-wrapper .four #contact-wrapper .right:hover, body main #slide-wrapper .four #contact-wrapper .left:hover {
+  opacity: 0.9;
+}
+body main #slide-wrapper .four #contact-wrapper .active:hover {
+  opacity: 1;
+}
+body main #slide-wrapper .four #contact-wrapper .left {
+  text-align: center;
+  opacity: 0.5;
+  grid-row: 1;
+  grid-column: 1;
+  background-image: url(./images/joboffer.jpeg);
+}
+body main #slide-wrapper .four #contact-wrapper .right {
+  grid-row: 1;
+  grid-column: 2;
+  background-image: url(./images/enquiry.jpg);
+  opacity: 0.5;
+}
+body main #slide-wrapper .four #contact-wrapper .active {
+  opacity: 1;
+}
+body main #slide-wrapper .four #contact-wrapper .bot {
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}
+body main #slide-wrapper .four #contact-wrapper .eins, body main #slide-wrapper .four #contact-wrapper .zwei {
+  width: 100%;
+  display: flex;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form, body main #slide-wrapper .four #contact-wrapper .zwei form {
+  padding: 0 10vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #cecece;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form .form-group, body main #slide-wrapper .four #contact-wrapper .zwei form .form-group {
+  margin-bottom: 0;
+  margin-top: 2vh;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form input, body main #slide-wrapper .four #contact-wrapper .eins form textarea, body main #slide-wrapper .four #contact-wrapper .zwei form input, body main #slide-wrapper .four #contact-wrapper .zwei form textarea {
+  border: none;
+  color: black;
+  border-radius: 0;
+  background-color: #c6c6c6;
+  font-size: 2.75vh;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form input, body main #slide-wrapper .four #contact-wrapper .zwei form input {
+  height: 6vh;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form textarea, body main #slide-wrapper .four #contact-wrapper .zwei form textarea {
+  height: 16vh;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form #exampleFormControlFile1, body main #slide-wrapper .four #contact-wrapper .zwei form #exampleFormControlFile1 {
+  opacity: 0.4;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form #exampleFormControlFile1:hover, body main #slide-wrapper .four #contact-wrapper .eins form #exampleFormControlFile1:active, body main #slide-wrapper .four #contact-wrapper .zwei form #exampleFormControlFile1:hover, body main #slide-wrapper .four #contact-wrapper .zwei form #exampleFormControlFile1:active {
+  opacity: 1;
+}
+body main #slide-wrapper .four #contact-wrapper .eins form > div, body main #slide-wrapper .four #contact-wrapper .zwei form > div {
+  width: 100%;
+}
+body main #slide-wrapper .four #contact-wrapper .eins .btn, body main #slide-wrapper .four #contact-wrapper .zwei .btn {
+  padding: 1vh;
+  margin-top: 2vh;
+  font-size: 2vh;
+  background-color: #201f1f;
+  font-family: "Raleway", sans-serif;
+  border: none;
+}
+body main #slide-wrapper .four #contact-wrapper .eins {
+  display: flex;
+}
+body main #slide-wrapper .four #contact-wrapper .zwei {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  body header .intro-nav-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  body header .intro-nav-wrapper #intro {
+    background-color: rgba(19, 19, 19, 0.505);
+    background-blend-mode: soft-light;
+    background-image: url(./images/entrepreneur.png);
+    background-position-y: 0vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: opacity(0.4);
+  }
+  body header .intro-nav-wrapper #intro p {
+    color: rgba(255, 255, 255, 0.816);
+  }
+  body main #slide-wrapper {
+    max-width: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  body main #slide-wrapper .slide1 {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  body main #slide-wrapper .one {
+    display: none;
+  }
+  body main #slide-wrapper .two #about-text {
+    width: 100%;
+    margin: 0;
+  }
+  body main #slide-wrapper .two #about-text #personal, body main #slide-wrapper .two #about-text #education, body main #slide-wrapper .two #about-text #work {
+    width: 100vw;
+  }
+  body main #slide-wrapper .two #about-text #personal p, body main #slide-wrapper .two #about-text #education p, body main #slide-wrapper .two #about-text #work p {
+    font-size: 1.5vh;
+  }
+  body main #slide-wrapper .three .carousel-indicators {
+    display: none;
+  }
+  body main #slide-wrapper .three #karte-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 60vh;
+    max-height: 60vh;
+  }
+  body main #slide-wrapper .three #karte-wrapper .carousel-control-next {
+    left: 85vw;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  body header .intro-nav-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  body header .intro-nav-wrapper #intro {
+    background-color: rgba(19, 19, 19, 0.505);
+    background-blend-mode: soft-light;
+    background-image: url(./images/entrepreneur.png);
+    background-position-y: -10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: opacity(0.4);
+    height: 65vh;
+  }
+  body header .intro-nav-wrapper #intro p {
+    color: rgba(255, 255, 255, 0.816);
+  }
+  body header .links {
+    height: 10vh;
+  }
+  body main #slide-wrapper {
+    max-width: 100vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  body main #slide-wrapper .slide1 {
+    width: 100vw;
+    max-width: 100vw;
+  }
+  body main #slide-wrapper .one {
+    display: none;
+  }
+  body main #slide-wrapper .two #about-text {
+    width: 100%;
+    margin: 0;
+  }
+  body main #slide-wrapper .two #about-text #personal, body main #slide-wrapper .two #about-text #education, body main #slide-wrapper .two #about-text #work {
+    width: 100vw;
+  }
+  body main #slide-wrapper .two #about-text #personal p, body main #slide-wrapper .two #about-text #education p, body main #slide-wrapper .two #about-text #work p {
+    font-size: 2.5vh;
+  }
+  body main #slide-wrapper .three .carousel-indicators {
+    display: none;
+  }
+  body main #slide-wrapper .three #karte-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 60vh;
+    max-height: 60vh;
+  }
+  body main #slide-wrapper .three #karte-wrapper .carousel-control-next {
+    left: 85vw;
+  }
+  body main #slide-wrapper .three #karte-wrapper .karte .karte-body h5 {
+    font-size: 4.5vh;
+  }
+  body main #slide-wrapper .three #karte-wrapper .karte .karte-body p {
+    font-size: 3vh;
+  }
+  body main #slide-wrapper .four .top {
+    min-height: 20vw;
+  }
+  body main #slide-wrapper .four .bot, body main #slide-wrapper .four form {
+    max-height: calc(100vh - 20vw);
+  }
+  body main #slide-wrapper .four .bot .form-group, body main #slide-wrapper .four form .form-group {
+    margin-bottom: 0;
+    margin-top: 2vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

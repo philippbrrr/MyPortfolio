@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Portfolio - Philipp Brunke</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Portfolio Page of Philipp Brunke a Business Informatics student on his way to become a web developer">
+    <meta name="keywords"
+        content="Philipp, Brunke, Portfolio, Ostfalia, Business, Informatics, Wirtschaftsinformatik, Webentwicklung">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" >-->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Raleway:wght@100;200;500;700&display=swap"
+        as="style">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Raleway:wght@100;200;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <div id="popup">
+        <div>
+            <h1>If you are using a touch device it is recommended to rotate your device. Otherwise you can proceed and
+                use the desktop version by clicking on the button below</h1>
+            <button onclick="javascript: showDesktop()">desktop</button>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="intro-nav-wrapper">
+                <div id="intro">
+
+                    <div id="headline">
+                        <p id="welcome"><span>Welcome to my <span>Portfolio</span></span></p>
+                        <p id="text-about" class="about-title" style="display: none;"><span>About Me</span></p>
+                        <p id="text-projects" class="about-title" style="display: none;"><span>Projects</span></p>
+                        <p id="text-contact" class="about-title" style="display: none;"><span>Contact</span></p>
+                    </div>
+
+
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li onclick="javascript: smoothScroll('home');">
+                            <p>Home</p>
+                        </li>
+                        <li onclick="javascript: smoothScroll('about me');">
+                            <p>About Me</p>
+                        </li>
+                        <li onclick="javascript: smoothScroll('projects');">
+                            <p>Projects</p>
+                        </li>
+                        <li onclick="javascript: smoothScroll('contact');">
+                            <p>Contact</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/philippbrrr">
+                                <img src="./images/github-logo.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.xing.com/profile/Philipp_Brunke3/cv">
+                                <img src="./images/xing.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/philipp-br-2a3b13189/">
+                                <img src="./images/linkedin.png" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="slide-wrapper">
+
+            <div class="slide1 one">
+                <div id="placeholder"></div>
+                <div id="wrapper-img">
+                    <h1>Philipp <br> <span>Brunke</span></h1>
+                </div>
+            </div>
+
+            <div class="slide1 two">
+                <div style="display: none;">
+                    <h1>About me</h1>
+                </div>
+                <div id="about-text">
+                    <div id="personal">
+                        <div>
+                            <h2>Personal</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        I'm <span>Philipp Brunke</span> and <span>25 years old</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Located in <span>Lower Saxony (Germany)</span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Currently <span>studying Business Informatics</span> at Ostfalia - University of
+                                        Applied Science
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        fully trained <span>assistant tax consultant</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="education">
+                        <div>
+                            <h2>Education</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <span>Since 2018</span>: Business Informatics (Ostfalia - University of Applied
+                                        Science)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>between 08/2017 and 06/2018</span>: university of applied sciences
+                                        entrance qualification (BBS1 Aurich - College of Further Education)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>fluent in <span>german</span>, good in <span>english</span> and basic
+                                        knowledge in <span>spanish</span> aswell</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="work">
+                        <div>
+                            <h2>Work Experience</h2>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <span>between 05/2017 and 05/2019</span>: <span>assistant tax consultant</span>
+                                        (tax consultancy Vogelsang)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>between 09/2014 and 05/2017</span>: <span>apprenticeship </span>to become
+                                        a <span>assistant tax consultant</span> (tax consultancy Vogelsang)
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide1 three">
+                <div style="display: none;">
+                    <h1>Projects</h1>
+                </div>
+                <div id="karte-wrapper">
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-intervall="false"
+                        style="width: 100%; height:100%;display: flex;justify-content: center;align-content: center; "
+                        data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+
+
+
+                        <div class="carousel-inner karte"
+                            style="width: 100%;height:100%;display: flex;justify-content: center;align-content: center;">
+
+                            <div class="carousel-item active">
+                                <div class="bild-container">
+                                    <img class="karte-img-top" src="./images/taxoffice1.png" alt="Card image cap">
+                                </div>
+                                <div class="karte-body">
+                                    <h5 class="karte-title">Tax consultancy</h5>
+                                    <p class="karte-text">The first exemplary website i created. In the process of
+                                        creating the website I learned the basics of HTML and CSS. It has a flexbox
+                                        design and therefore is fully responsive.</p>
+                                    <a href="https://github.com/philippbrrr/Steuerberater">See Github Repository</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+
+                                <div class="bild-container">
+                                    <img class="karte-img-top" src="./images/sailing.png" alt="Card image cap">
+                                </div>
+                                <div class="karte-body">
+                                    <h5 class="karte-title">Sailing School</h5>
+                                    <p class="karte-text">The second website i created. In the process I expanded my
+                                        knowledge of HTML and CSS as well as learned the basics of Javascript.
+                                        Javascript was used to create a slideshow and the hamburger menu to offer a
+                                        fully responsive site.</p>
+                                    <a href="https://github.com/philippbrrr/SailingSchool">See Github Repository</a>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item ">
+
+                                <div class="bild-container">
+                                    <img class="karte-img-top" src="./images/videoplat1.png" alt="Card image cap">
+                                </div>
+                                <div class="karte-body">
+                                    <h5 class="karte-title">Video platform</h5>
+                                    <p class="karte-text">A Project for the web-dev course at my University. The task
+                                        was to create a videoplatform from scratch. It helped me to strengthen my HTML,
+                                        CSS and JS Skillset but also taught me about JSON and the Concept of SPA Routing
+                                        with Vanilla Javascript.</p>
+                                    <a href="" style="opacity: 0.4;">See Github Repository</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide1 four">
+                <div style="display: none;">
+                    <h1>Contact</h1>
+                </div>
+
+                <div id="contact-wrapper">
+                    <div onclick="javascript: chooseForm('eins')" class="top left active">
+                        <div
+                            style="width:100%; height:100%;display: flex; align-content: center; justify-content: center;">
+                            <h3 style="align-self: center; justify-self: center;">Job Offer</h3>
+                        </div>
+                    </div>
+                    <div onclick="javascript: chooseForm('zwei')" class="top right">
+                        <div
+                            style="width:100%; height:100%;display: flex; align-content: center; justify-content: center;">
+                            <h3 style="align-self: center; justify-self: center;">Enquiry</h3>
+                        </div>
+                    </div>
+                    <div class="bot eins active">
+
+                        <form action="./mailSent.php" method="POST" enctype="multipart/form-data">
+                            <!--<h3>Job Offer</h3>-->
+                            <div class="form-group">
+
+                                <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+
+                                <input name="subject" value="Job Offer" class="form-control" type="text" readonly>
+                                <input name="subject1" type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Job title">
+                            </div>
+
+                            <div class="form-group">
+                                <input name="attachment" type="file" class="form-control-file"
+                                    id="exampleFormControlFile1">
+                            </div>
+
+                            <div class="form-group">
+
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+                        </form>
+
+                    </div>
+                    <div class="bot zwei ">
+                        <form action="./mailSent.php" method="POST" enctype="multipart/form-data">
+                            <!--<h3>Enquiry</h3>-->
+                            <div class="form-group">
+                                <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <input name="subject" value="Enquiry" class="form-control" type="text" readonly>
+                                <input name="subject1" type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Tell me what it's about">
+                            </div>
+
+                            <div class="form-group">
+                                <input name="attachment" type="file" class="form-control-file"
+                                    id="exampleFormControlFile1">
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="Message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Send Message</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!--<footer>
+            <div style="width:30vw; height: 100vh;display: flex;align-items: center;justify-items: center; text-align: center;">
+                <h1 style="color:black; font-size: 4vh;">
+                    &copy; Philipp Brunke, 08/2020
+                </h1>
+            </div>
+        </footer>-->
+
+</body>
+
+<script src="./js/smoothScroll.js"></script>
+<script src="./js/chooseForm.js"></script>
+<script src="./js/rotateDevice.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<!--<script src="browserDetection.js"></script>-->
+<!--<script src="js/touchDetection.js"></script>-->
+
+
+</html>
